@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFDK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+
+            <div class="nav">
+                <div class="logo">
+                    <div class="logoDiv">
+                        <span>SFDK</span>
+                        <span id="smallSpan">Eyecare</span>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <a href="#Introduction" class="link">Introduction</a>
+                    <a href="#About" class="link">About</a>
+                    <a href="#Others" class="link">Others</a>
+                </div>
+                <div class="navOnPhone">
+                    <select id="navMenu" onchange="navigate()">
+                        <option value="" disabled selected hidden> Go to</option>
+                        <option value="#home">Home</option>
+                        <option value="#Introduction">Introduction</option>
+                        <option value="#About">About</option>
+                        <option value="#Others">Others</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="home">
+                <div class="mainText">
+                    <h1>S.F.D.K</h1>
+                    <span>Screen Face distance Keeper</span>
+                </div>
+            </div>
+            <div id="Introduction" class="contentBox">
+                <h1>INTRODUCTION</h1>
+                <p>
+                    In this evolving world of technology, it has become mandatory to use gadgets (e.g. Phone, Laptop, PC
+                    etc.). They have
+                    many benefits such as , we get to know about the whole world sitting in any corner of the world,
+                    gaining information has
+                    became much easier. But these gadgets also have a dark side. Almost most of the gadgets we use have
+                    a screen.
+                </p>
+                <p>
+                    These screens either OLED or AMOLED while using them these screens emit Blue light. This high energy
+                    blue light passes
+                    through the cornea and lens reaching the retina, causing diseases such as Dry eye, Eye strain,
+                    Headache etc
+                </p>
+                <p>
+                    Afterwards I did some research on cause and preventions of this, and I came up with this Idea.
+                </p>
+            </div>
+            <div id="About">
+                <div class="clearContainer" id="spiBox">
+                    <h1 id="Science">
+                        Scientific principle involved
+                    </h1>
+                    <p>Here, the Ultrasonic sensor Emits Ultrasonic sound waves ( About 40,000hz) and receives the
+                        reflected waves to measure
+                        the distance using the time taken. Then it sends this data to The microcontroller board, The
+                        board processes the data
+                        and sends it to The led s and the HC-05. The Bluetooth Module Sends the data to the device.
+                        Where the app processes it
+                        send the notification needed.
+                    </p>
+                </div>
+
+                <div class="contentBox">
+                    <h1 id="Hardware">
+                        Hardware
+                    </h1>
+                    <div class="hardwareBox">
+                        <ol>
+
+                            <li> Wooden case</li>
+                            <li> Arduino Nano</li>
+                            <li> Ultrasonic sensor( HCSR-04)</li>
+                            <li> HC-05( Bluetooth Module)</li>
+                            <li> LED s</li>
+                            <li> 9V Power supply(conditions apply)</li>
+                            <li> Wires</li>
+                            <li> 1k resistors</li>
+                            <li> Switch(conditions apply)</li>
+
+                        </ol>
+                        <img src="image/CircuitDiagram.png" alt="circuit not available" id="circuit">
+                    </div>
+
+                </div>
+                <div class="clearContainer" id="codeBox">
+
+                    <h1 id="code">
+                        Software
+                    </h1>
+                    <p>The Software of this device is divided into two parts. One the programe on the arduino, and other
+                        , the program of the app. the app has been programmed using python (win10toast and pyseril
+                        modules were used) and the Arduino board has been programmed by the CPP Language. You
+                        can download both of them using the link below!</p>
+                    <button class="linkButton"><a href="packages/pyscript.exe">App for Windows</a></button>
+                    <button class="linkButton"><a href="packages/ArduinoCode.cpp">Arduino code</a></button>
+                    <button class="linkButton"><a href="packages/pyscript.py">Python file</a></button>
+                    <button class="linkButton"><a href="packages/ArduinoCode.cpp">Arduino code</a></button>
+                    <button class="linkButton"><a href="packages.zip">Whole package</a></button>
+                </div>
+                <div class="clearContainer" id="howTo">
+
+                    <h1 id="code">
+                        Installaton Guide
+                    </h1>
+                    <p>Downoad the .exe file on your Windows(if that is not working try the .py - for py installation
+                        setup <a href="pyInstal.html">Go Here</a>). then pair your buetooth (if not working try usb). After that You
+                        shoud start receiving notifictions</p>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer">
+            <img src="image/favicon.ico" alt="image not available" id="fImage">
+            <div class="contact">
+                <a href="https://www.instagram.com/ezaz_a.a/"><img src="image/instagram.png" alt=""
+                        class="contactImage"></a>
+                <a href="https://github.com/EzazAA/"><img src="image/github.png" alt="" class="contactImage"></a>
+            </div>
+            <div class="spanBox">
+                <span>This website is not for any marketing or sale. This is made for educational purpose. This contains
+                    all of my information about my Project. This is made only for that particular project. Copying of
+                    this without author's permmission would be punishable. Conatct me on <span
+                        class="SSpan">Instagram</span> or<span class="SSpan">Github</span> given n the links. Contact
+                    for more
+                    information </span>
+                <span>
+                    I Acknowledge all of the below people and organization for the support. <br> First of all my parents, they are the reason why i am here. Next is my Guide techer. Ms Shivangi Mishra she helped me a lot and suppported mme throughet the entire journey. Next Anubhav Bhaiya, he has heled me a lot from the beggining to the end. then al of my classmates tey supported me a lot (mentally and physiaclly) to maintain my motivation. Thanks to everyone who hepled me! <br> Quartz Components, Stack Overlflow and Arduino are some organizations i would like to express my greetings
+                </span>
+                <span>Author - Ezaz Alam Ahmed</span>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
